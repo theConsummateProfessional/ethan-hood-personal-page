@@ -1,0 +1,22 @@
+html {
+    background-color: black;
+}
+
+.jumbotron {
+    background-color: black;
+    border-radius: 0%;
+}
+
+h1 {
+    color: #33ff00;
+}
+
+h2 {
+    color: #33ff00;
+}
+
+.headshot {
+    border-radius: 25%;
+    width: 202px;
+    height: 306px;
+}
