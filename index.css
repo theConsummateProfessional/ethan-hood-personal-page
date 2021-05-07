@@ -1,3 +1,8 @@
+* {
+    font-family: menlo;
+    color: #33ff00;
+}
+
 html {
     background-color: black;
 }
@@ -15,8 +20,37 @@ h2 {
     color: #33ff00;
 }
 
+
 .headshot {
     border-radius: 25%;
     width: 202px;
     height: 306px;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 0%;
+}
+ 
+.btn-outline-primary {
+    border-color: #33ff00;
+    color: #33ff00;
+}
+
+.btn-outline-primary:hover {
+    background-color: #33ff00;
+    border-color: #33ff00;
+    color: black;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+    background-color: #33ff00 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color:black !important;
+} 
+
+.container-fluid > div:nth-child(2) {
+    padding-bottom: 30px;
 }
