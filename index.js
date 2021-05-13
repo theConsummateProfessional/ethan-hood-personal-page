@@ -6,36 +6,17 @@ function type_writer(text, i, cb) {
 
 }
 
-var about = document.getElementById("about");
-var exp = document.getElementById("exp");
-var proj = document.getElementById("proj");
-var contact = document.getElementById("contact");
-
-about.addEventListener("click", () => {
-
-    document.getElementById("text_display").innerHTML = `
-        eph$ cat about_me.txt <br>
-        My name is Ethan Hood, and I am currently a Computer Science Major at the University of North Alabama
-    `;
-});
-
-exp.addEventListener("click", () => {
-    document.getElementById("text_display").innerHTML = `
-    eph$ cat experience.txt <br />
-    I worked at a few places...
-    `
-})
-
-proj.addEventListener("click", () => {
-    document.getElementById("text_display").innerHTML = `
-    eph$ open projects.pdf <br />
-    Here are projects with some pictures
-    `
-})
-
-contact.addEventListener("click", () => {
-    document.getElementById("text_display").innerHTML = `
-    eph$ ./contact_form <br />
-    Here is a contact form
-    `
-})
+var div_state = {}
+function hide_others(id) {
+    if (document.getElementById) {
+        var divid = document.getElementById(id);
+        div_state[id] = (div_state[id]) ? false : true;
+        for(var div in div_state) {
+            if(div_state[div] && div != id) {
+                document.getElementById(div).style.display = 'none';
+                div_state[div] = false;
+            }
+        }
+        divid.style.display = (divid.style.display == 'block' ? 'none' : 'block');
+    }
+}

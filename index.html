@@ -25,12 +25,200 @@
                 </div>
             </div>
             <div class="row">
-                <button type="button" class="btn btn-outline-primary btn-lg shadow-none" id="about">About</button>
-                <button type="button" class="btn btn-outline-primary btn-lg shadow-none" id="exp">Experience</button>
-                <button type="button" class="btn btn-outline-primary btn-lg shadow-none" id="proj">Projects</button>
-                <button type="button" class="btn btn-outline-primary btn-lg shadow-none" id="contact">Contact</button>
+                <button type="button" class="btn btn-outline-primary btn-lg shadow-none" onclick="hide_others('about')">About</button>
+                <button type="button" class="btn btn-outline-primary btn-lg shadow-none" onclick="hide_others('exp')">Experience</button>
+                <button type="button" class="btn btn-outline-primary btn-lg shadow-none" onclick="hide_others('proj')">Projects</button>
+                <a type="button" class="btn btn-outline-primary btn-lg shadow-none" onclick="hide_others('contact')" href="mailto:ethanphood@gmail.com">Contact</a>
             </div>
             <div class="row" id="text_display">
+                <div id="about" style="display: none;">
+                    <p style="margin-bottom: 0px;">eph$ cat about_me.txt</p>
+                    <p>
+                        My name is Ethan Hood, and I am currently a Computer Science Major at the University of North Alabama.
+                        My primary interests are in artificial intelligence, web development, and IOT devices. I have been interested 
+                        in technology since I was a little boy playing around with my dad's Power PC Mac Pro (it was so cool to my 
+                        little brain that I could switch between OS9 and OSX), and it naturally grew from there. I have been 
+                        programming on and off again since I was about 12, and got really serious about it senior year of high school. 
+                        My time at the University of North Alabama has been spent studying hard, tinkering with software and hardware, 
+                        and learning all the ins and outs of my craft. I absolutely love this field, and I will take every opportunity 
+                        to grow within it. When I am not programming, you can spot me playing video games, rooting for my favorite football
+                        teams (Roll Tide and Go Pats), listening to older music (mainly The Beatles or Bob Dylan), and playing guitary or 
+                        piano (depending on my mood that day).
+                    </p>
+                </div>
+                <div id="exp" style="display: none;">
+                    <p style="margin-bottom: 0px;">eph$ cat experience.txt</p>
+                    <p>
+                        //EDUCATION// <br />
+                        -------------
+                        <ul>
+                            <li><strong>Bachelor of Science</strong>, August 2018 - Present</li>
+                            <li>University of North Alabama</li>
+                            <li>Major: Computer Science</li>
+                            <li>Minor: Mathematics and Philosophy</li>
+                            <li>GPA: 4.0/4.0</li>
+                        </ul>
+                        //WORK EXPERIENCE// <br />
+                        ------------------- <br />
+                        <ul>
+                            <li>Student Web Developer, May 2019 - May 2021</li>
+                            <li>Florence, Alabama</li>
+                            <ul>
+                                <li>Maintained web pages for various departments throughout the university</li>
+                                <li>Built web applications for departments that needed them</li>
+                                <li>Maintained backend services when needed</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Lojix Software Developer Intern, August 2020 - Present</li>
+                            <li>Huntsville, Alabama</li>
+                            <ul>
+                                <li>Maintenance on both backend and frontend services</li>
+                                <li>Participated in SCRUM code sprints to resolve issues</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>CS Tutor, January 2019 - Present</li>
+                            <li>Florence, Alabama</li>
+                            <ul>
+                                <li>Helps students with assignments, studying, and projects for the beginner level CS classes</li>
+                            </ul>
+                        </ul>
+                        //SKILLS// <br />
+                        ---------- <br />
+                        <ul style="width: 25%; float: left;">
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                        </ul>
+                        <ul style="width: 25%; float: left;">
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>NodeJS</li>
+                            <li>Python</li>
+                        </ul>
+                        <ul style="width: 25%; float: left;">
+                            <li>Tensorflow</li>
+                            <li>MongoDB</li>
+                            <li>SQL</li>
+                            <li>VIM</li>
+                        </ul>
+                        <ul style="width: 25%; float: left;">
+                            <li>Linux Console</li>
+                            <li>PHP</li>
+                            <li>VueJS</li>
+                            <li>Angular</li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="proj" style="display: none;">
+                    <p style="margin-bottom: 0px;">eph$ open projects.pdf</p>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://github.com/theConsummateProfessional/nfl-betting-service-elo">
+                                        <img src="images/AIproject.png" style="width: 100%;"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/theConsummateProfessional/nfl-betting-service-elo">
+                                        <u>NFL Spread-Betting Simulation</u>
+                                    </a>
+                                    <ul>
+                                        <li>Used Python web scraping to gather data on NFL Teams on the 2019 NFL season</li>
+                                        <li>Used SciKit learn to create a logistic regression model to see what percentage chance an
+                                            NFL team had at beating a particular spread that week of the season.
+                                        </li>
+                                        <li>~65% of the predictions ended up correct, 55% is considered really good.</li>
+                                        <li>Used feature engineering to add features to the project (such as an ELO rating system).</li>
+                                        <li>Frontend made in Vue.</li>
+                                        <li>Backend used NodeJS (express server) and MongoDB</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://github.com/theConsummateProfessional/number_predictor">
+                                        <img src="./images/number_predictor.png"  style="width: 100%;"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/theConsummateProfessional/number_predictor">
+                                        <u>Number Predictor</u>
+                                    </a>
+                                    <ul>
+                                        <li>Trained a neural network to recongize handwritten digits with the Mnist dataset.</li>
+                                        <li>Used the PyGame library and PIL to allow a user to draw digits and let the model predict what digit was drawn.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://github.com/nguyenquan263/CS455Project">
+                                        <img src="./images/cs455server.png" style="width: 100%;">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/nguyenquan263/CS455Project">
+                                        <u>Software Engineering Server Project</u>
+                                    </a>
+                                    <ul>
+                                        <li>Collaborated on a project to build a tutoring software's backend</li>
+                                        <li>My main responsibility was handeling the schedule and appointment endpoints</li>
+                                        <li>Also had to handle conflicts between schedules</li>
+                                        <li>Written in C++ to interact with a Mongo Database</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_s4fNICT-AQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </td>
+                                <td>
+                                    <a href="https://www.youtube.com/watch?v=_s4fNICT-AQ">
+                                        <u>Undergraduate Machine Learning Project</u>
+                                    </a>
+                                    <ul>
+                                        <li>Worked with a major international shipping company to classify different types of documents</li>
+                                        <li>First used kmeans clustering to determine if data is actually clusterable</li>
+                                        <li>Then used a convolution nerual network using various pixel sizes to determine what was the ideal size for both speed and precision</li>
+                                        <li>Placed first in the College of Business 3MT Competition at the University.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--div class="col-md-12">
+                        <p>
+                            <a href="https://github.com/theConsummateProfessional/nfl-betting-service-elo"><img src="images/AIproject.png" style="float: left; width: 50%; margin-right: 20px;"/></a>
+                            <a href="https://github.com/theConsummateProfessional/nfl-betting-service-elo"><u>NFL Spread-Betting Simulation</u></a>
+                            <ul>
+                                <li>Used Python web scraping to gather data on NFL Teams on the 2019 NFL season</li>
+                                <li>Used SciKit learn to create a logistic regression model to see what percentage chance an
+                                    NFL team had at beating a particular spread that week of the season.
+                                </li>
+                                <li>65% of the predictions ended up correct, 55% is considered really good.</li>
+                                <li>Used feature engineering to add features to the project (such as an ELO rating system).</li>
+                                <li>Frontend made in Vue.</li>
+                                <li>Backend used NodeJS (express server) and MongoDB</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <p>
+                            <img src="./images/number_predictor.png" style="float: left; width: 50%;">
+                            <p>Test 1 2</p>
+                        </p>
+                    </div-->
+                </div>
+                <div id="contact" style="display: none;">
+                    <p style="margin-bottom: 0px;">eph$ ./contact_form</p>
+                    <p style="margin-bottom: 0px;">Send physical mail to: 427 Park Boulevard</p>
+                    <a href="https://www.linkedin.com/in/ethan-hood-18a606191/"><u>Linkedin</u></a> <br />
+                    <a href="https://github.com/"><u>Github</u></a>
+                </div>
             </div>
         </div>
     </section>
