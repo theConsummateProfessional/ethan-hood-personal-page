@@ -3,6 +3,11 @@
     color: #33ff00;
 }
 
+::selection {
+    color: black;
+    background-color: #33ff00;
+}
+
 html {
     background-color: black;
 }
