@@ -76,3 +76,17 @@ a:hover {
 tr {
     border-top: hidden;
 }
+
+@media (max-width: 990px) {
+    table {
+        display: none;
+    }
+    #phone-size {
+        display: block;
+    }
+}
+@media (min-width: 990px) {
+    #phone-size {
+        display: none;
+    }
+}

@@ -1,11 +1,3 @@
-var type_writer_element = document.getElementById("typewriter");
-
-text_array = ["Ethan Hood", "Software Engineer", "in training..."];
-
-function type_writer(text, i, cb) {
-
-}
-
 var div_state = {}
 function hide_others(id) {
     if (document.getElementById) {
